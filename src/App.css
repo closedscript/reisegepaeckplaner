@@ -1,21 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=VT323&display=swap');
 
-html {
+html, body {
   height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
 }
 
 #root {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  background-image: url(./images/malta.jpg);
+  background-size: cover;
 }
 
-body {
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0); 
+  color: white; 
+  padding: 20px; 
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  min-height: 100%;
-  font-family: 'Source Sans 3', sans-serif;
-  overflow-x: hidden;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto; /* Vertikales Scrollen ermöglichen */
+  max-height: calc(100vh - 40px); /* Maximalhöhe auf 100% des Viewports abzüglich des oberen und unteren Abstands setzen */
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-grow: 1; /* Damit der Container wächst und das Scrollen ermöglicht wird */
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  margin: 0 10px;
+  padding: 20px; 
+}
+
+.checkbox-container {
+  overflow-y: auto;
+  max-height: 300px; /* Maximalhöhe für den Inhalt setzen, damit Scrollen möglich ist */
+}

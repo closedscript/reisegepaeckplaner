@@ -3,7 +3,7 @@ function Header() {
     return (
         <header>
             <h1 className={styles.mainHeader}>
-                Header
+                Reisegepäckplaner
             </h1>
         </header>
     )

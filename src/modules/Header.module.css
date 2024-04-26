@@ -3,7 +3,7 @@
 .mainHeader {
     margin: 0;
     padding: 2rem;
-    background-color: grey;
+    background-color: black;
     width: 100%;
-
+    color: white;
 }
