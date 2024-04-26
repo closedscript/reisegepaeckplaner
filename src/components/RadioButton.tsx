@@ -3,7 +3,6 @@ import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup } from "@mu
 type RadioButtonProps = {
     label1: string,
     label2: string
-
 }
 
 export default function RadioButton({label1, label2}: RadioButtonProps) {
